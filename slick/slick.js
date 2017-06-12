@@ -27,6 +27,12 @@
 
 }(function($) {
     'use strict';
+
+    // prevent from troubles with server-side rendering
+    if (!window) {
+        return;
+    }
+
     var Slick = window.Slick || {};
 
     Slick = (function() {
